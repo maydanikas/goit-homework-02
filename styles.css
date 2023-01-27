@@ -1,3 +1,13 @@
+/* Palette */
+:root {
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --text: #434455;
+  --hover: #404bbf;
+  --light: #f4f4fd;
+  --accent: #e7e9fc;
+}
+
 body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   font-style: normal;
@@ -7,16 +17,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
   background-color: #ffffff;
-}
-
-/* Palette */
-:root {
-  --primary-brand: #4d5ae5;
-  --dark: #2e2f42;
-  --text: #434455;
-  --hover: #404bbf;
-  --light: #f4f4fd;
-  --accent: #e7e9fc;
 }
 
 /* LOGO */
@@ -66,6 +66,13 @@ h1 {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 h2 {
   font-weight: 700;
@@ -143,6 +150,13 @@ button:focus {
   color: #ffffff;
 }
 /* Sections */
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.hero {
+  background-color: var(--dark);
+}
 .our-team {
   background-color: var(--light);
 }
