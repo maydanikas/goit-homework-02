@@ -6,17 +6,16 @@
   --hover: #404bbf;
   --light: #f4f4fd;
   --accent: #e7e9fc;
+  --white: #ffffff;
 }
 
 body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 /* LOGO */
@@ -60,29 +59,30 @@ body {
   text-decoration: none;
 }
 /* Typography */
-h1 {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white);
 }
-h2 {
+.main-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
 }
-h3 {
+.benefits-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -94,9 +94,6 @@ h3 {
 li {
   list-style: none;
 }
-/* ul {
-  padding: 0%;
-} */
 
 /* Active elements */
 .nav-links {
@@ -109,12 +106,7 @@ li {
 }
 .nav-links:hover,
 .nav-links:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
   color: var(--hover);
-  text-decoration: none;
 }
 .nav-address {
   font-style: normal;
@@ -124,34 +116,34 @@ li {
 }
 .nav-address:hover,
 .nav-address:focus {
-  letter-spacing: 0.02em;
   color: var(--hover);
 }
 button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-brand);
   cursor: pointer;
   background: var(--light);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent);
   border-radius: 4px;
 }
 button:hover,
 button:focus {
   background: var(--hover);
-  color: #ffffff;
+  color: var(--white);
 }
 .hero-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   background: var(--primary-brand);
-  color: #ffffff;
+  color: var(--white);
 }
 /* Sections */
 header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent);
 }
 
 .hero {
